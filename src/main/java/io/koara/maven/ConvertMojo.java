@@ -7,36 +7,26 @@ import io.koara.xml.XmlRenderer;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
+import org.apache.maven.plugins.annotations.Mojo;
+import org.apache.maven.plugins.annotations.Parameter;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
- * @goal convert
- * @requiresProject false
- */
-
+@Mojo(name = "convert", requiresProject = false)
 public class ConvertMojo extends AbstractMojo {
 
-    /**
-     * @parameter expression="${koara.sourceDirectory}" default-value="${basedir}/src/main/koara"
-     */
+    @Parameter(property = "koara.sourceDirectory", defaultValue = "${basedir}/src/main/koara")
     private File sourceDirectory;
 
-    /**
-     * @parameter expression="${koara.outputDirectory}" default-value="${project.build.directory}/generated-docs"
-     */
-    protected File outputDirectory;
+    @Parameter(property = "koara.outputDirectory", defaultValue = "${project.build.directory}/generated-docs")
+    private File outputDirectory;
 
-    /**
-     * @parameter expression="${koara.outputFormat}" default-value="html5"
-     */
+    @Parameter(property = "koara.outputFormat", defaultValue = "html5")
     private String outputFormat;
 
-    /**
-     * @parameter expression="${koara.modules}" default-value="paragraphs,headings,lists,links,images,formatting,blockquote,code"
-     */
+    @Parameter(property = "koara.modules", defaultValue = "paragraphs,headings,lists,links,images,formatting,blockquote,code")
     private String modules;
 
     private String[] formattedModules = {"paragraphs", "headings", "lists", "links", "images", "formatting", "blockquote", "code"};
