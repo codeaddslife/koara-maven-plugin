@@ -11,6 +11,31 @@ This project is a plugin for parsing [Koara](http://www.koara.io) documents with
 ## Getting Started
 Download:
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>io.koara</groupId>
+   <artifactId>demo</artifactId>
+   <version>1.0-SNAPSHOT</version>
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>io.koara</groupId>
+            <artifactId>koara-maven-plugin</artifactId>
+            <version>0.1.0</version>
+            <executions>
+               <execution>
+                  <id>output-html</id>
+                  <phase>generate-resources</phase>
+                  <goals>
+                     <goal>convert</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+</project>
 ```
 
 ## Task attributes
