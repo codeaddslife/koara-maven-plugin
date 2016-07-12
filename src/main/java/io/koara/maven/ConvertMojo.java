@@ -53,6 +53,7 @@ public class ConvertMojo extends AbstractMojo {
         if(outputFormat == null || outputFormat.equalsIgnoreCase("html5")) {
 
             Html5Renderer renderer = new Html5Renderer();
+            renderer.setPartial(false);
             document.accept(renderer);
             writeToFile(new File(outputDirectory, name + ".htm"), renderer.getOutput());
         } else if(outputFormat.equalsIgnoreCase("xml")) {
