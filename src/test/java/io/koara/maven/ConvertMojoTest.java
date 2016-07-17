@@ -39,7 +39,7 @@ public class ConvertMojoTest {
         File[] files = targetDir.listFiles();
         assertEquals(1, files.length);
         assertEquals("input.htm", files[0].getName());
-        assertEquals("<p>Hello World!</p>", readFileAsString(files[0]));
+        assertEquals("<!DOCTYPE html>\n<html>\n  <body>\n    <p>Hello World!</p>  </body>\n</html>\n", readFileAsString(files[0]));
     }
 
     @Test
@@ -65,7 +65,7 @@ public class ConvertMojoTest {
     public void executeWithModulesSet() throws Exception {
         mojo.setModules(" HEADINGS");
         mojo.execute();
-        assertEquals("Hello World!", readFileAsString(targetDir.listFiles()[0]));
+        assertEquals("<!DOCTYPE html>\n<html>\n  <body>\n    Hello World!  </body>\n</html>\n", readFileAsString(targetDir.listFiles()[0]));
     }
 
     @Test
