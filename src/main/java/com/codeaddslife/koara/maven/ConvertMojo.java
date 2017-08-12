@@ -1,9 +1,9 @@
-package io.koara.maven;
+package com.codeaddslife.koara.maven;
 
-import io.koara.Parser;
-import io.koara.ast.Document;
-import io.koara.html.Html5Renderer;
-import io.koara.xml.XmlRenderer;
+import com.codeaddslife.koara.Parser;
+import com.codeaddslife.koara.ast.Document;
+import com.codeaddslife.koara.html.Html5Renderer;
+import com.codeaddslife.koara.xml.XmlRenderer;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;

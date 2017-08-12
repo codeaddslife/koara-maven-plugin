@@ -29,22 +29,22 @@
     </developers>
 
     <properties>
-        <koara.version>0.12.0</koara.version>
+        <koara.version>0.15.0</koara.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>io.koara</groupId>
+            <groupId>com.codeaddslife.koara</groupId>
             <artifactId>koara</artifactId>
             <version>${koara.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.koara</groupId>
+            <groupId>com.codeaddslife.koara</groupId>
             <artifactId>koara-html</artifactId>
             <version>${koara.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.koara</groupId>
+            <groupId>com.codeaddslife.koara</groupId>
             <artifactId>koara-xml</artifactId>
             <version>${koara.version}</version>
         </dependency>

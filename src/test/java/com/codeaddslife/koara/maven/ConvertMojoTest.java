@@ -1,4 +1,4 @@
-package io.koara.maven;
+package com.codeaddslife.koara.maven;
 
 import org.apache.maven.plugin.MojoFailureException;
 import org.junit.Before;
