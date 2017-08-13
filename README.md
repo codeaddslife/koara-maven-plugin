@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/codeaddslife/koara-maven-plugin.svg)](https://travis-ci.org/codeaddslife/koara-maven-plugin)
 [![Coverage Status](https://img.shields.io/coveralls/codeaddslife/koara-maven-plugin.svg)](https://coveralls.io/github/codeaddslife/koara-maven-plugin?branch=master)
-[![Latest Version](https://img.shields.io/maven-central/v/io.koara/koara-maven-plugin.svg?label=Maven Central)](http://search.maven.org/#search%7Cga%7C1%7Ckoara-maven-plugin)
+[![Maven Central](https://img.shields.io/maven-central/v/com.codeaddslife.koara/koara-maven-plugin.svg)](http://search.maven.org/#search%7Cga%7C1%7Ckoara)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/codeaddslife/koara-maven-plugin/blob/master/LICENSE)
 
 # Koara-maven-plugin
