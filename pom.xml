@@ -5,7 +5,6 @@
     <artifactId>koara-maven-plugin</artifactId>
     <version>0.1.0</version>
     <packaging>maven-plugin</packaging>
-    <name>first-maven-plugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
     <description>Koara converter for Maven</description>
 
